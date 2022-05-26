@@ -1,0 +1,27 @@
+{
+    "name": "abdallah/ecom-rulengine",
+    "description": "ecommerce rule engine",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Abdallah\\EcomRuleEngine\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Abdallah\\EcomRuleEngine\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "abdallah nassar",
+            "email": "abdallahnasar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.10",
+        "orchestra/testbench": "8.0.x-dev"
+    }
+}
