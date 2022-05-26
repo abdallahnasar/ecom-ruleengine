@@ -1,0 +1,123 @@
+[
+
+
+    {
+        "conditions_operator": "&&",
+        "conditions": [
+            {
+                "name": "repeating_customer",
+                "operator": "==",
+                "value": 1
+            },
+            {
+                "name": "total_quantity",
+                "operator": ">",
+                "value": 4
+            },
+            {
+                "name": "different_products",
+                "operator": ">",
+                "value": 4
+            }
+        ],
+        "action":
+        {
+            "string": "5 € Off the total",
+            "name": "discount",
+            "value": -5
+        }
+
+
+    },
+
+
+    {
+        "conditions": [
+            {
+                "name": "quantity",
+                "operator": "==",
+                "value": 2
+            }
+        ],
+        "action":
+        {
+            "string": "Get the first one free",
+            "name": "free",
+            "value": 1
+        }
+
+    },
+
+
+
+    {
+        "conditions_operator": "&&",
+        "conditions": [
+            {
+                "name": "never_ordered",
+                "operator": "==",
+                "value": 1
+            },
+            {
+                "name": "total_quantity",
+                "operator": ">",
+                "value": 0
+            }
+        ],
+        "action":
+        {
+            "string": "Get the special “OneHoodie” for free",
+            "name": "free",
+            "value": "OneHoodie"
+        }
+
+    },
+
+
+    {
+        "conditions_operator": "&&",
+        "conditions": [
+            {
+                "name": "promo_code",
+                "operator": "==",
+                "value": "Welcome1337"
+            },
+            {
+                "name": "total_quantity",
+                "operator": ">",
+                "value": 0
+            }
+        ],
+        "action":
+        {
+            "string": "Free Purchase",
+            "name": "free",
+            "value": "purchase"
+        }
+
+    },
+
+
+    {
+        "conditions_operator": "&&",
+        "conditions": [
+            {
+                "name": "ProductA/ProductB",
+                "operator": "in",
+                "value": "cart"
+            },
+            {
+                "name": "total_quantity",
+                "operator": ">",
+                "value": "1"
+            }
+        ],
+        "action":
+        {
+            "string": "get first one free",
+            "name": "free",
+            "value": 1
+        }
+
+    }
+]

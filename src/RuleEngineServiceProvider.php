@@ -32,5 +32,10 @@ class RuleEngineServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/config/rule-engine.php' => config_path('rule-engine.php')
         ]);
+        $this->publishes([
+            __DIR__ . '/public/Storage.js' => public_path('Storage.js'),
+            __DIR__ . '/public/rules.json' => public_path('rules.json'),
+        ], 'public');
+
     }
 }
