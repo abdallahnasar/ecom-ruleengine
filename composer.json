@@ -1,7 +1,7 @@
 {
     "name": "abdallah/ecom-rulengine",
     "description": "ecommerce rule engine",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
