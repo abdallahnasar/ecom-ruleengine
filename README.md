@@ -1,7 +1,5 @@
 # PHP Laravel E-commerce Rule Engine
 
-Requirements php
-
 1- install package to your laravel project using command:
 
 composer require abdallah/ecom-rulengine
