@@ -35,6 +35,7 @@ class RuleEngineServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/public/Storage.js' => public_path('Storage.js'),
             __DIR__ . '/public/rules.json' => public_path('rules.json'),
+            __DIR__ . '/public/StorageStyle.css' => public_path('StorageStyle.css'),
         ], 'public');
 
     }
